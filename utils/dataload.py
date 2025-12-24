@@ -39,7 +39,7 @@ def get_batch_data(TRAIN_PATH, TEST_PATH, ntrain, ntest, r_train,s_train,r_test,
     # get training data
     reader = MatReader(TRAIN_PATH)
     x_train = reader.read_field('sig')
-    x_train = np.abs(x_train) #### 将电导率变成电阻率
+    x_train = np.abs(x_train) 
     x_train = x_train[:ntrain,::r_train[0],::r_train[1]][:,:s_train[0],:s_train[1]]
     y_train = torch.stack([reader.read_field(key_map[i])\
     [:ntrain,::r_train[2],::r_train[3]][:,:s_train[2],:s_train[3]] for i in range(len(key_map))]).permute(1,2,3,0)
