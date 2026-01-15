@@ -15,3 +15,37 @@ Magnetotellurics (MT) is a powerful geophysical tool that probes subsurface elec
 - 📊 **Efficient Uncertainty Quantification**: Bootstrap resampling for solution confidence
 - ⚡ **Real data test**: Real-time inversion capabilities
 
+
+## Framework
+
+![alt text](./figs/RDON.png)
+
+## Dependencies
+```
+environment.yml
+```
+
+
+## Dataset Generation
+The forward modeling module in this repository is adapted from [EFNO](https://github.com/zhongpenggeo/EFNO). We leverage its capabilities to perform efficient electromagnetic simulations, which serve as the foundation for our inversion framework.
+
+
+
+## Getting Started
+
+The training and testing datasets, along with the pre-trained model parameters used in our paper, are publicly available on Zenodo. You can download them from the following link:
+
+> **[Download Data & Models (Zenodo)](https://zenodo.org/records/17073125)**
+
+Please unzip the downloaded files into the `./data` and `./model` directory (or specify your path).
+
+
+
+## Acknowledgements
+
+The development of **RDON** was significantly facilitated by the following open-source projects:
+
+* **Forward Modeling:** We utilized the [EFNO](https://github.com/zhongpenggeo/EFNO) framework for efficient electromagnetic simulations.
+* **Invertible Network:** We acknowledge the [realnvp-pytorch](https://github.com/henrhoi/realnvp-pytorch) repository, which greatly facilitated the implementation of the invertible components within our **RDON** method.
+
+We thank the authors of these repositories for their valuable contributions to the community.
