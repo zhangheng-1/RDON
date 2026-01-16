@@ -37,11 +37,18 @@ The forward modeling module in this repository is adapted from [EFNO](https://gi
 
 ## Getting Started
 
+### 1. Data Preparation
 The training and testing datasets, along with the pre-trained model parameters used in our paper, are publicly available on Zenodo. You can download them from the following link:
 
 > **[Download Data & Models (Zenodo)](https://zenodo.org/records/17073125)**
 
 Please unzip the downloaded files into the `./data` and `./model` directory (or specify your path).
+
+### 2. Model Training
+We provide the training script and configuration file to reproduce our results or train on new data:
+
+* **Configuration (`train_32_32.yml`)**: This file contains all the hyperparameters (e.g., learning rate, batch size, epochs) and file paths. You can modify this file to customize the training setup.
+* **Training Script (`train.ipynb`)**: Open and run this Jupyter Notebook. It loads the configuration from the YAML file and executes the training pipeline.
 
 
 
