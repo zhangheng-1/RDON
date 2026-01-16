@@ -1,0 +1,11 @@
+TRAIN_PATH: ./data/train data/y300_z100_0.0005_100Hz/train_10000_size32_32_y300km32_z100km.mat
+TEST_PATH: ./data/train data/y300_z100_0.0005_100Hz/test_1000_size32_32_y300km32_z100km.mat
+
+ntrain: 10000 # samples of training
+ntest: 1000   # samples of test
+
+n_out: 4 
+s_train: [32,32,32,32] # resolution in (x,y) direction
+r_train: [1,1,1,1] # Interval sampling
+s_test: [32,32,32,32] # resolution in (x,y) direction
+r_test: [1,1,1,1] # Interval sampling
